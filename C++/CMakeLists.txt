@@ -7,7 +7,7 @@ include_directories(. gtest/include gmock/include)
 
 LINK_DIRECTORIES(gtest gmock)
 
-LINK_LIBRARIES(gmock gtest pthread )
+#LINK_LIBRARIES(gmock gtest pthread )
 
 
 add_executable(C__
