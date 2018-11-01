@@ -2,8 +2,12 @@ To build the executable run
 
 make exe
 
-To build the tests run
+To build the doctests tests run
 
 make test
 
-Both commands create executable files in out: trivia and triviaTests
+To build the gtest tests run
+
+make testg
+
+All commands create executable files in 'out' folder: trivia, triviaTests, triviaGTests
