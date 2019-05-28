@@ -1,5 +1,7 @@
 package com.adaptionsoft.games.uglytrivia;
 
+import com.adaptionsoft.games.trivia.GameRepos;
+
 public class Player {
     String name;
     int purse;
@@ -20,7 +22,7 @@ public class Player {
 
     public void addGold() {
         purse++;
-        System.out.println(name
+        GameRepos.print(name
                 + " now has "
                 + purse
                 + " Gold Coins.");
@@ -30,26 +32,26 @@ public class Player {
         place = place + roll;
         if (place > 11) place = place - 12;
 
-        System.out.println(name
+        GameRepos.print(name
                 + "'s new location is "
                 + place);
     }
 
     public void wrongAnswer() {
-        System.out.println(name + " was sent to the penalty box");
+        GameRepos.print(name + " was sent to the penalty box");
         inPenalty = true;
     }
 
     public void roll(int roll) {
-        System.out.println(name + " is the current player");
-        System.out.println("They have rolled a " + roll);
+        GameRepos.print(name + " is the current player");
+        GameRepos.print("They have rolled a " + roll);
         if (!inPenalty || rollOutPenalty(roll)) {
             isGettingOutOfPenaltyBox = true;
-            System.out.println(name + " is getting out of the penalty box");
+            GameRepos.print(name + " is getting out of the penalty box");
             move(roll);
             return;
         }
-        System.out.println(name + " is not getting out of the penalty box");
+        GameRepos.print(name + " is not getting out of the penalty box");
         isGettingOutOfPenaltyBox = false;
 
     }
@@ -60,7 +62,7 @@ public class Player {
 
     public void wasCorrectAnswered() {
         if (!inPenalty || isGettingOutOfPenaltyBox) {
-            System.out.println("Answer was corrent!!!!");
+            GameRepos.print("Answer was corrent!!!!");
             addGold();
             return;
         }
