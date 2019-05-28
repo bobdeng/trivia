@@ -11,7 +11,7 @@ public class Players {
 
     }
 
-    private Player currentPlayer(){
+    private Player currentPlayer() {
         return players.get(currentPlayer);
     }
 
@@ -20,10 +20,7 @@ public class Players {
     }
 
     public boolean add(String playerName) {
-
-
         players.add(new Player(playerName));
-
         System.out.println(playerName + " was added");
         System.out.println("They are player number " + players.size());
         return true;
@@ -39,7 +36,7 @@ public class Players {
     }
 
     public boolean wasCorrectlyAnswered() {
-        boolean result=currentPlayer().wasCorrectAnswered();
+        boolean result = currentPlayer().wasCorrectAnswered();
         next();
         return result;
     }

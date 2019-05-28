@@ -98,11 +98,14 @@
       <find>isGettingOutOfPenaltyBox</find>
       <find>players.places[players.currentPlayer]</find>
       <find>places[currentPlayer]</find>
+      <find>players.get(currentPlayer)</find>
+      <find>currentPlayer().</find>
     </findStrings>
     <replaceStrings>
       <replace>players.place();</replace>
       <replace>players.place()</replace>
       <replace>place</replace>
+      <replace>name</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
