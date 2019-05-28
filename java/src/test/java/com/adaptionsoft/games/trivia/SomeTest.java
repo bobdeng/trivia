@@ -3,13 +3,18 @@ package com.adaptionsoft.games.trivia;
 import static org.junit.Assert.*;
 
 import com.adaptionsoft.games.uglytrivia.Game;
+import org.junit.Before;
 import org.junit.Test;
 
 public class SomeTest {
+	@Before
+	public void setUp() throws Exception {
+		GameRepos.repo=new GameRepoImpl();
+	}
 
 	@Test
 	public void game_win() throws Exception {
-		GameRepos.repo=new GameRepoImpl();
+
 		Game game=new Game();
 		game.add("alice");
 		game.add("bob");
