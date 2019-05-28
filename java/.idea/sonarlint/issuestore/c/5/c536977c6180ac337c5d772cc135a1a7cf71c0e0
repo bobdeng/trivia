@@ -1,0 +1,7 @@
+
+©%squid:RedundantThrowsDeclarationCheck"lRemove the declaration of thrown exception 'java.lang.Exception', as it cannot be thrown from method's body.(·†–Šúÿÿÿÿ8ÜÃôç¯-
+¤%squid:RedundantThrowsDeclarationCheck"lRemove the declaration of thrown exception 'java.lang.Exception', as it cannot be thrown from method's body.(ç’·8ÜÃôç¯-
+rsquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(·†–Šúÿÿÿÿ8ÜÃôç¯-
+msquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ç’·8ÜÃôç¯-
+jsquid:S00112"FDefine and throw a dedicated exception instead of using a generic one.(·†–Šúÿÿÿÿ8ÜÃôç¯-
+esquid:S00112"FDefine and throw a dedicated exception instead of using a generic one.(ç’·8ÜÃôç¯-
