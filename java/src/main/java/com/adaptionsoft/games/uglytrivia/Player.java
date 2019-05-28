@@ -68,8 +68,7 @@ public class Player {
             if (isGettingOutOfPenaltyBox) {
                 System.out.println("Answer was correct!!!!");
                 addGold();
-                boolean winner = didPlayerWin();
-                return winner;
+                return didPlayerWin();
             } else {
                 return true;
             }
