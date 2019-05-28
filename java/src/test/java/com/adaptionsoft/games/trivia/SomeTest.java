@@ -33,6 +33,9 @@ public class SomeTest {
 		game.roll(4);
 		game.wrongAnswer();
 		checkGameHistory("game_play_step2.history");
+		game.roll(4);
+		game.wasCorrectlyAnswered();
+		//checkGameHistory("game_play_step3.history");
 	}
 
 
