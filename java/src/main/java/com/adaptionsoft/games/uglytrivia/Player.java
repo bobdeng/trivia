@@ -79,9 +79,8 @@ public class Player {
             System.out.println("Answer was corrent!!!!");
             addGold();
 
-            boolean winner = didPlayerWin();
+            return  didPlayerWin();
 
-            return winner;
         }
     }
     boolean didPlayerWin() {
