@@ -3,14 +3,12 @@ package com.adaptionsoft.games.uglytrivia;
 import java.util.LinkedList;
 
 public class Questions {
-    private final Game game;
     LinkedList popQuestions = new LinkedList();
     LinkedList scienceQuestions = new LinkedList();
     LinkedList sportsQuestions = new LinkedList();
     LinkedList rockQuestions = new LinkedList();
 
     public Questions(Game game) {
-        this.game = game;
         for (int i = 0; i < 50; i++) {
             popQuestions.addLast("Pop Question " + i);
             scienceQuestions.addLast(("Science Question " + i));

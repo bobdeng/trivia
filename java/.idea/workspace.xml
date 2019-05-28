@@ -268,12 +268,12 @@
     </option>
   </component>
   <component name="RunManager" selected="JUnit.SomeTest">
-    <configuration name="GameRunner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.adaptionsoft.games.runner.GameRunner" />
+    <configuration name="GameRunner (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.adaptionsoft.games.trivia.runner.GameRunner" />
       <module name="uglytrivia" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.adaptionsoft.games.runner.*" />
+          <option name="PATTERN" value="com.adaptionsoft.games.trivia.runner.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -346,10 +346,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.SomeTest" />
+        <item itemvalue="Application.GameRunner (1)" />
         <item itemvalue="JUnit.SomeTest (1)" />
         <item itemvalue="JUnit.SomeTest.game_penalty" />
         <item itemvalue="JUnit.SomeTest.game (1)" />
-        <item itemvalue="Application.GameRunner" />
       </list>
     </recent_temporary>
   </component>
@@ -449,7 +449,7 @@
     <option name="version" value="1" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/uglytrivia$SomeTest.ic" NAME="SomeTest Coverage Results" MODIFIED="1559012247470" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/uglytrivia$SomeTest.ic" NAME="SomeTest Coverage Results" MODIFIED="1559026712727" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.adaptionsoft.games.trivia.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/uglytrivia$SomeTest__1_.ic" NAME="SomeTest (1) Coverage Results" MODIFIED="1559022286705" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
