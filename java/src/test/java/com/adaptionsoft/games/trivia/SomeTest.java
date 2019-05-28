@@ -18,7 +18,16 @@ public class SomeTest {
 			game.roll(1);
 		}
 		game.roll(1);
+		checkGameHistory(game,"game1.history");
+	}
 
+	private void checkGameHistory(Game game, String file) {
+		String content=GameRepos.repo.toString();
+		String fileContent=readFile(file);
+	}
+
+	private String readFile(String file) {
+		return null;
 	}
 
 	@Test
