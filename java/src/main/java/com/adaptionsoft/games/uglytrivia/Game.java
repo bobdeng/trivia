@@ -8,31 +8,17 @@ public class Game {
 
     }
 
-
-	
 	public boolean isPlayable() {
 		return players.isPlayable();
 	}
 
 	public boolean add(String playerName) {
-
-
 		return players.add(playerName);
-	}
-	
-	public int howManyPlayers() {
-		return players.howManyPlayers();
 	}
 
 	public void roll(int roll) {
-
 		players.roll(roll);
 	}
-
-	private void askQuestion() {
-		questions.askQuestion();
-	}
-	
 	
 	String currentCategory() {
 		if (players.place() == 0) return "Pop";
