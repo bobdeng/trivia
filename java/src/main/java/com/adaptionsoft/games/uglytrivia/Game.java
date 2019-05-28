@@ -2,7 +2,7 @@ package com.adaptionsoft.games.uglytrivia;
 
 public class Game {
 	final Players players = new Players();
-	final Questions questions = new Questions(this);
+	final Questions questions = new Questions();
 
 	public  Game(){
     }
