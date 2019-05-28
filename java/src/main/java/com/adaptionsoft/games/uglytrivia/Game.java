@@ -1,21 +1,15 @@
 package com.adaptionsoft.games.uglytrivia;
 
-import java.util.LinkedList;
-
 public class Game {
 	final Players players = new Players();
-
-	LinkedList popQuestions = new LinkedList();
-    LinkedList scienceQuestions = new LinkedList();
-    LinkedList sportsQuestions = new LinkedList();
-    LinkedList rockQuestions = new LinkedList();
+	final Questions questions = new Questions(this);
 
 	public  Game(){
     	for (int i = 0; i < 50; i++) {
-			popQuestions.addLast("Pop Question " + i);
-			scienceQuestions.addLast(("Science Question " + i));
-			sportsQuestions.addLast(("Sports Question " + i));
-			rockQuestions.addLast(createRockQuestion(i));
+			questions.popQuestions.addLast("Pop Question " + i);
+			questions.scienceQuestions.addLast(("Science Question " + i));
+			questions.sportsQuestions.addLast(("Sports Question " + i));
+			questions.rockQuestions.addLast(createRockQuestion(i));
     	}
     }
 
@@ -43,18 +37,11 @@ public class Game {
 	}
 
 	private void askQuestion() {
-		if (currentCategory() == "Pop")
-			System.out.println(popQuestions.removeFirst());
-		if (currentCategory() == "Science")
-			System.out.println(scienceQuestions.removeFirst());
-		if (currentCategory() == "Sports")
-			System.out.println(sportsQuestions.removeFirst());
-		if (currentCategory() == "Rock")
-			System.out.println(rockQuestions.removeFirst());		
+		questions.askQuestion();
 	}
 	
 	
-	private String currentCategory() {
+	String currentCategory() {
 		if (players.place() == 0) return "Pop";
 		if (players.place() == 4) return "Pop";
 		if (players.place() == 8) return "Pop";
@@ -70,7 +57,7 @@ public class Game {
 	public boolean wasCorrectlyAnswered() {
 		boolean result = players.wasCorrectlyAnswered();
 		System.out.println("The category is " + currentCategory());
-		askQuestion();
+		questions.askQuestion();
 		return result;
 
 	}
