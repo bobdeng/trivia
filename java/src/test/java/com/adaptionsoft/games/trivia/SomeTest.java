@@ -6,6 +6,8 @@ import com.adaptionsoft.games.uglytrivia.Game;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.io.InputStream;
+
 public class SomeTest {
 	@Before
 	public void setUp() throws Exception {
@@ -26,13 +28,14 @@ public class SomeTest {
 		//checkGameHistory("game1.history");
 	}
 
-	private void checkGameHistory(String file) {
+	private void checkGameHistory(String file)throws Exception {
 		String content=GameRepos.repo.toString();
 		String fileContent=readFile(file);
 		assertEquals(content,fileContent);
 	}
 
-	private String readFile(String file) {
+	private String readFile(String file) throws Exception{
+		InputStream intputStream = getClass().getClassLoader().getResourceAsStream(file);
 		return null;
 	}
 
