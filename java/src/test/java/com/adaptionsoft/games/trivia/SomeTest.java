@@ -31,6 +31,7 @@ public class SomeTest {
 		game.wasCorrectlyAnswered();
 		checkGameHistory("game_play_step1.history");
 		game.roll(4);
+		checkGameHistory("game_play_step2.history");
 	}
 
 
