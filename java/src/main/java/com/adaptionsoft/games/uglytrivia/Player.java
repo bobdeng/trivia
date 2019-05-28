@@ -49,11 +49,8 @@ public class Player {
             move(roll);
             return;
         }
-        if(!rollOutPenalty(roll)){
-            System.out.println(name + " is not getting out of the penalty box");
-            isGettingOutOfPenaltyBox = false;
-            return;
-        }
+        System.out.println(name + " is not getting out of the penalty box");
+        isGettingOutOfPenaltyBox = false;
 
     }
 
