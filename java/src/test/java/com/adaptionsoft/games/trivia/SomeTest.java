@@ -18,12 +18,13 @@ public class SomeTest {
 			game.roll(1);
 		}
 		game.roll(1);
-		checkGameHistory(game,"game1.history");
+		//checkGameHistory("game1.history");
 	}
 
-	private void checkGameHistory(Game game, String file) {
+	private void checkGameHistory(String file) {
 		String content=GameRepos.repo.toString();
 		String fileContent=readFile(file);
+		assertEquals(content,fileContent);
 	}
 
 	private String readFile(String file) {
