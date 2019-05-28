@@ -5,7 +5,7 @@ public class Player {
     int purse;
     int place;
     boolean inPenalty;
-
+    boolean isGettingOutOfPenaltyBox;
     public Player(String name) {
         this.name = name;
         purse=0;

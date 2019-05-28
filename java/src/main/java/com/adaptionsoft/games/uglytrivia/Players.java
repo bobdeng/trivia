@@ -6,7 +6,6 @@ import java.util.List;
 public class Players {
     List<Player> players = new ArrayList();
     int currentPlayer = 0;
-    boolean isGettingOutOfPenaltyBox;
 
     public Players() {
 
@@ -40,14 +39,14 @@ public class Players {
 
         if (currentPlayer().inPenalty) {
             if (roll % 2 != 0) {
-                isGettingOutOfPenaltyBox = true;
+                currentPlayer().isGettingOutOfPenaltyBox = true;
 
                 System.out.println(players.get(currentPlayer) + " is getting out of the penalty box");
                 currentPlayer().move(roll);
 
             } else {
                 System.out.println(players.get(currentPlayer) + " is not getting out of the penalty box");
-                isGettingOutOfPenaltyBox = false;
+                currentPlayer().isGettingOutOfPenaltyBox = false;
             }
 
         } else {
@@ -60,7 +59,7 @@ public class Players {
 
     public boolean wasCorrectlyAnswered() {
         if (currentPlayer().inPenalty) {
-            if (isGettingOutOfPenaltyBox) {
+            if (currentPlayer().isGettingOutOfPenaltyBox) {
                 System.out.println("Answer was correct!!!!");
                 currentPlayer().addGold();
                 boolean winner = didPlayerWin();
