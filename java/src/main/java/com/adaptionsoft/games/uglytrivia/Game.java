@@ -20,18 +20,17 @@ public class Game {
 		players.roll(roll);
 	}
 
-
 	public boolean wasCorrectlyAnswered() {
 		boolean result = players.wasCorrectlyAnswered();
 		questions.askQuestion(players.currentPlayer());
 		return result;
 
 	}
-	
-	public boolean wrongAnswer(){
 
+	public boolean wrongAnswer(){
 		return players.wrongAnswer();
 	}
+	
 
 	public boolean isInPenaltyBox() {
 		return players.isInPenaltyBox();
