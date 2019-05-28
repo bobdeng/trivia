@@ -1,0 +1,5 @@
+
+Ÿsquid:S1186
+"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ø«¼8—îîè¯-
+”squid:S1845"qRename method "currentPlayer" to prevent any misunderstanding/clash with field "currentPlayer" defined on line 8.(Ï‘ ÷ùÿÿÿÿ8ô¿áé¯-
+-squid:S1700"Rename field "players"(ŠÃ÷

@@ -42,17 +42,20 @@ public class Player {
         inPenalty = true;
     }
 
-    public void roll(int roll) {
+    public boolean roll(int roll) {
         GameRepos.print(name + " is the current player");
         GameRepos.print("They have rolled a " + roll);
         if (!inPenalty || rollOutPenalty(roll)) {
             isGettingOutOfPenaltyBox = true;
-            //GameRepos.print(name + " is getting out of the penalty box");
+            if(inPenalty) {
+                GameRepos.print(name + " is getting out of the penalty box");
+            }
             move(roll);
-            return;
+            return true;
         }
         GameRepos.print(name + " is not getting out of the penalty box");
         isGettingOutOfPenaltyBox = false;
+        return false;
 
     }
 

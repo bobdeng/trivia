@@ -1,0 +1,4 @@
+
+]squid:S1118":Add a private constructor to hide the implicit public one.(–åüûÿÿÿÿ8àòÂì¯-
+Hsquid:S1444"*Make this "public static repo" field final(Ó¬öÑ8àòÂì¯-
+…"squid:ClassVariableVisibilityCheck"PMake repo a static final constant or non-public and provide accessors if needed.(Ó¬öÑ8àòÂì¯-

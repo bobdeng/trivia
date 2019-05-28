@@ -6,6 +6,8 @@ import org.junit.Before;
 import org.junit.Test;
 
 import java.io.InputStream;
+import java.util.Arrays;
+import java.util.List;
 
 public class SomeTest {
 	@Before
@@ -36,7 +38,36 @@ public class SomeTest {
 		game.wasCorrectlyAnswered();
 		checkGameHistory("game_play_step3.history");
 	}
-	
+
+	@Test
+	public void game_full() throws Exception{
+		Game game=new Game();
+		game.add("alice");
+		game.add("bob");
+		Arrays.asList(
+			new GameStep(1,false),
+			new GameStep(2,true),
+			new GameStep(1,true),
+			new GameStep(2,true),
+			new GameStep(4,true),
+			new GameStep(4,true),
+			new GameStep(4,true),
+			new GameStep(6,true),
+			new GameStep(2,true),
+			new GameStep(2,true),
+			new GameStep(4,true),
+			new GameStep(3,true)
+		).forEach(gameStep -> {
+			game.roll(gameStep.step);
+			if(gameStep.right){
+				game.wasCorrectlyAnswered();
+			}else{
+				game.wrongAnswer();
+			}
+		});
+		checkGameHistory("game_full.history");
+
+	}
 
 	private void checkGameHistory(String file)throws Exception {
 		String content=GameRepos.repo.toString();

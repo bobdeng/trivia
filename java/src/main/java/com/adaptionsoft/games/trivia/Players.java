@@ -15,10 +15,6 @@ public class Players {
         return players.get(currentPlayer);
     }
 
-    public boolean isPlayable() {
-        return (howManyPlayers() >= 2);
-    }
-
     public boolean add(String playerName) {
         players.add(new Player(playerName));
         GameRepos.print(playerName + " was added");
@@ -26,12 +22,8 @@ public class Players {
         return true;
     }
 
-    public int howManyPlayers() {
-        return players.size();
-    }
-
-    public void roll(int roll) {
-        currentPlayer().roll(roll);
+    public boolean roll(int roll) {
+        return currentPlayer().roll(roll);
     }
 
     public boolean wasCorrectlyAnswered() {
@@ -51,15 +43,6 @@ public class Players {
         currentPlayer().wrongAnswer();
         next();
         return true;
-    }
-
-
-    public boolean isInPenaltyBox() {
-        return currentPlayer().inPenalty;
-    }
-
-    public int getGoldCoin() {
-        return currentPlayer().purse;
     }
 
 }
