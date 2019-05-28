@@ -22,6 +22,7 @@ public class SomeTest {
 		}
 		game.roll(1);
 		assertFalse(game.wasCorrectlyAnswered());
+
 	}
 
 	@Test

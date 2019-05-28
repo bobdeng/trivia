@@ -1,0 +1,95 @@
+/Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/bin/java -ea -Didea.test.cyclic.buffer.size=1048576 "-javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=50759:/Applications/IntelliJ IDEA.app/Contents/bin" -Dfile.encoding=UTF-8 -classpath "/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar:/Applications/IntelliJ IDEA.app/Contents/plugins/junit/lib/junit-rt.jar:/Applications/IntelliJ IDEA.app/Contents/plugins/junit/lib/junit5-rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/jre/lib/deploy.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/jre/lib/ext/cldrdata.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/jre/lib/ext/dnsns.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/jre/lib/ext/jaccess.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/jre/lib/ext/jfxrt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/jre/lib/ext/localedata.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/jre/lib/ext/nashorn.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/jre/lib/ext/sunec.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/jre/lib/ext/sunjce_provider.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/jre/lib/ext/sunpkcs11.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/jre/lib/ext/zipfs.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/jre/lib/javaws.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/jre/lib/jfxswt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/jre/lib/management-agent.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/jre/lib/plugin.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/lib/ant-javafx.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/lib/dt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/lib/javafx-mx.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/lib/jconsole.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/lib/packager.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/lib/sa-jdi.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/lib/tools.jar:/Users/dengzhiguo/workspace/opensource/trivia/java/target/test-classes:/Users/dengzhiguo/workspace/opensource/trivia/java/target/classes:/Users/dengzhiguo/.m2/repository/junit/junit/4.8.2/junit-4.8.2.jar" com.intellij.rt.execution.junit.JUnitStarter -ideVersion5 -junit4 com.adaptionsoft.games.trivia.SomeTest,game_win
+alice was added
+They are player number 1
+bob was added
+They are player number 2
+alice is the current player
+They have rolled a 1
+alice is getting out of the penalty box
+alice's new location is 1
+Answer was corrent!!!!
+alice now has 1 Gold Coins.
+The category is Pop
+Pop Question 0
+bob is the current player
+They have rolled a 1
+bob is getting out of the penalty box
+bob's new location is 1
+Answer was corrent!!!!
+bob now has 1 Gold Coins.
+The category is Science
+Science Question 0
+alice is the current player
+They have rolled a 1
+alice is getting out of the penalty box
+alice's new location is 2
+Answer was corrent!!!!
+alice now has 2 Gold Coins.
+The category is Science
+Science Question 1
+bob is the current player
+They have rolled a 1
+bob is getting out of the penalty box
+bob's new location is 2
+Answer was corrent!!!!
+bob now has 2 Gold Coins.
+The category is Sports
+Sports Question 0
+alice is the current player
+They have rolled a 1
+alice is getting out of the penalty box
+alice's new location is 3
+Answer was corrent!!!!
+alice now has 3 Gold Coins.
+The category is Sports
+Sports Question 1
+bob is the current player
+They have rolled a 1
+bob is getting out of the penalty box
+bob's new location is 3
+Answer was corrent!!!!
+bob now has 3 Gold Coins.
+The category is Rock
+Rock Question 0
+alice is the current player
+They have rolled a 1
+alice is getting out of the penalty box
+alice's new location is 4
+Answer was corrent!!!!
+alice now has 4 Gold Coins.
+The category is Rock
+Rock Question 1
+bob is the current player
+They have rolled a 1
+bob is getting out of the penalty box
+bob's new location is 4
+Answer was corrent!!!!
+bob now has 4 Gold Coins.
+The category is Pop
+Pop Question 1
+alice is the current player
+They have rolled a 1
+alice is getting out of the penalty box
+alice's new location is 5
+Answer was corrent!!!!
+alice now has 5 Gold Coins.
+The category is Pop
+Pop Question 2
+bob is the current player
+They have rolled a 1
+bob is getting out of the penalty box
+bob's new location is 5
+Answer was corrent!!!!
+bob now has 5 Gold Coins.
+The category is Science
+Science Question 2
+alice is the current player
+They have rolled a 1
+alice is getting out of the penalty box
+alice's new location is 6
+Answer was corrent!!!!
+alice now has 6 Gold Coins.
+The category is Science
+Science Question 3
+
+Process finished with exit code 0
