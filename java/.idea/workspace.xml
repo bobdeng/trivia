@@ -322,7 +322,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.SomeTest">
+  <component name="RunManager" selected="JUnit.com.adaptionsoft.games.trivia in uglytrivia">
     <configuration name="GameRunner (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.adaptionsoft.games.trivia.runner.GameRunner" />
       <module name="uglytrivia" />
@@ -366,45 +366,43 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SomeTest.game (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SomeTest.game_play_once" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="uglytrivia" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.adaptionsoft.games.*" />
+          <option name="PATTERN" value="com.adaptionsoft.games.trivia.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.adaptionsoft.games" />
-      <option name="MAIN_CLASS_NAME" value="com.adaptionsoft.games.SomeTest" />
-      <option name="METHOD_NAME" value="game" />
+      <option name="PACKAGE_NAME" value="com.adaptionsoft.games.trivia" />
+      <option name="MAIN_CLASS_NAME" value="com.adaptionsoft.games.trivia.SomeTest" />
+      <option name="METHOD_NAME" value="game_play_once" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SomeTest.game_penalty" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="com.adaptionsoft.games.trivia in uglytrivia" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="uglytrivia" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.adaptionsoft.games.*" />
+          <option name="PATTERN" value="com.adaptionsoft.games.trivia.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.adaptionsoft.games" />
-      <option name="MAIN_CLASS_NAME" value="com.adaptionsoft.games.SomeTest" />
-      <option name="METHOD_NAME" value="game_penalty" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="com.adaptionsoft.games.trivia" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.com.adaptionsoft.games.trivia in uglytrivia" />
+        <item itemvalue="JUnit.SomeTest.game_play_once" />
         <item itemvalue="JUnit.SomeTest" />
         <item itemvalue="Application.GameRunner (1)" />
         <item itemvalue="JUnit.SomeTest (1)" />
-        <item itemvalue="JUnit.SomeTest.game_penalty" />
-        <item itemvalue="JUnit.SomeTest.game (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -512,6 +510,9 @@
     </SUITE>
     <SUITE FILE_PATH="coverage/uglytrivia$SomeTest_game_penalty.ic" NAME="SomeTest.game_penalty Coverage Results" MODIFIED="1559020945134" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.adaptionsoft.games.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/uglytrivia$SomeTest_game_play_once.ic" NAME="SomeTest.game_play_once Coverage Results" MODIFIED="1559034153476" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.adaptionsoft.games.trivia.*</FILTER>
     </SUITE>
   </component>
   <component name="editorHistoryManager">

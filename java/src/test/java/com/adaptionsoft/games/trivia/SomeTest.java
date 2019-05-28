@@ -67,5 +67,5 @@ public class SomeTest {
 		return new String(data);
 	}
 
-	
+
 }
