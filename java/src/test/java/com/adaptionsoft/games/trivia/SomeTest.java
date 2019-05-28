@@ -9,6 +9,7 @@ public class SomeTest {
 
 	@Test
 	public void game_win() throws Exception {
+		GameRepos.repo=new GameRepoImpl();
 		Game game=new Game();
 		game.add("alice");
 		game.add("bob");
