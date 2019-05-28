@@ -19,7 +19,7 @@ public class SomeTest {
 		Game game=new Game();
 		game.add("alice");
 		game.add("bob");
-		//checkGameHistory("game_start.history");
+		checkGameHistory("game_start.history");
 	}
 	@Test
 	public void game_win() throws Exception {
