@@ -36,7 +36,8 @@ public class Players {
     }
 
     public boolean wasCorrectlyAnswered() {
-        boolean result = currentPlayer().wasCorrectAnswered();
+        currentPlayer().wasCorrectAnswered();
+        boolean result = currentPlayer().didPlayerWin();
         next();
         return result;
     }
