@@ -36,21 +36,7 @@ public class SomeTest {
 		game.wasCorrectlyAnswered();
 		checkGameHistory("game_play_step3.history");
 	}
-
-
-	@Test
-	public void game_win() throws Exception {
-
-		Game game=new Game();
-		game.add("alice");
-		game.add("bob");
-		for(int i=0;i<5;i++) {
-			game.roll(1);
-			game.roll(1);
-		}
-		game.roll(1);
-		//checkGameHistory("game1.history");
-	}
+	
 
 	private void checkGameHistory(String file)throws Exception {
 		String content=GameRepos.repo.toString();
