@@ -91,8 +91,7 @@ public class Players {
 
     public boolean wrongAnswer() {
         System.out.println("Question was incorrectly answered");
-        System.out.println(players.get(currentPlayer) + " was sent to the penalty box");
-        currentPlayer().inPenalty = true;
+        currentPlayer().wrongAnswer();
         next();
         return true;
     }

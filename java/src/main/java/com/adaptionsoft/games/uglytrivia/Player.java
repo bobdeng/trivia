@@ -34,4 +34,9 @@ public class Player {
                 + "'s new location is "
                 + place);
     }
+
+    public void wrongAnswer() {
+        System.out.println(name + " was sent to the penalty box");
+        inPenalty = true;
+    }
 }
