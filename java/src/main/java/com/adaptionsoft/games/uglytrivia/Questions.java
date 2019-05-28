@@ -1,12 +1,14 @@
 package com.adaptionsoft.games.uglytrivia;
 
+import com.adaptionsoft.games.trivia.GameRepos;
+
 import java.util.LinkedList;
 
 public class Questions {
-    LinkedList popQuestions = new LinkedList();
-    LinkedList scienceQuestions = new LinkedList();
-    LinkedList sportsQuestions = new LinkedList();
-    LinkedList rockQuestions = new LinkedList();
+    LinkedList<String> popQuestions = new LinkedList();
+    LinkedList<String>  scienceQuestions = new LinkedList();
+    LinkedList<String>  sportsQuestions = new LinkedList();
+    LinkedList<String>  rockQuestions = new LinkedList();
 
     public Questions() {
         for (int i = 0; i < 50; i++) {
@@ -33,14 +35,14 @@ public class Questions {
 
     void askQuestion(Player player) {
         String catagory = getCurrentQuestion(player.place);
-        System.out.println("The category is " + catagory);
+        GameRepos.print("The category is " + catagory);
         if (catagory.equals("Pop"))
-            System.out.println(popQuestions.removeFirst());
+            GameRepos.print(popQuestions.removeFirst());
         if (catagory.equals("Science"))
-            System.out.println(scienceQuestions.removeFirst());
+            GameRepos.print(scienceQuestions.removeFirst());
         if (catagory.equals("Sports"))
-            System.out.println(sportsQuestions.removeFirst());
+            GameRepos.print(sportsQuestions.removeFirst());
         if (catagory.equals("Rock"))
-            System.out.println(rockQuestions.removeFirst());
+            GameRepos.print(rockQuestions.removeFirst());
     }
 }
