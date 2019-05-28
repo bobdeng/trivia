@@ -5,7 +5,6 @@ public class Game {
 	final Questions questions = new Questions(this);
 
 	public  Game(){
-
     }
 
 	public boolean isPlayable() {
@@ -30,7 +29,7 @@ public class Game {
 	public boolean wrongAnswer(){
 		return players.wrongAnswer();
 	}
-	
+
 
 	public boolean isInPenaltyBox() {
 		return players.isInPenaltyBox();

@@ -36,13 +36,13 @@ public class Questions {
     void askQuestion(Player player) {
         String catagory = getCurrentQuestion(player.place);
         System.out.println("The category is " + catagory);
-        if (catagory == "Pop")
+        if (catagory.equals("Pop"))
             System.out.println(popQuestions.removeFirst());
-        if (catagory == "Science")
+        if (catagory.equals("Science"))
             System.out.println(scienceQuestions.removeFirst());
-        if (catagory == "Sports")
+        if (catagory.equals("Sports"))
             System.out.println(sportsQuestions.removeFirst());
-        if (catagory == "Rock")
+        if (catagory.equals("Rock"))
             System.out.println(rockQuestions.removeFirst());
     }
 }
