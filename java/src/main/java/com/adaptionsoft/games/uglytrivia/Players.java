@@ -5,7 +5,6 @@ import java.util.List;
 
 public class Players {
     List<Player> players = new ArrayList();
-    boolean[] inPenaltyBox = new boolean[6];
     int currentPlayer = 0;
     boolean isGettingOutOfPenaltyBox;
 
@@ -25,7 +24,6 @@ public class Players {
 
 
         players.add(new Player(playerName));
-        inPenaltyBox[howManyPlayers()] = false;
 
         System.out.println(playerName + " was added");
         System.out.println("They are player number " + players.size());
@@ -40,7 +38,7 @@ public class Players {
         System.out.println(players.get(currentPlayer) + " is the current player");
         System.out.println("They have rolled a " + roll);
 
-        if (inPenaltyBox[currentPlayer]) {
+        if (currentPlayer().inPenalty) {
             if (roll % 2 != 0) {
                 isGettingOutOfPenaltyBox = true;
 
@@ -61,7 +59,7 @@ public class Players {
     }
 
     public boolean wasCorrectlyAnswered() {
-        if (inPenaltyBox[currentPlayer]) {
+        if (currentPlayer().inPenalty) {
             if (isGettingOutOfPenaltyBox) {
                 System.out.println("Answer was correct!!!!");
                 currentPlayer().addGold();
@@ -94,8 +92,7 @@ public class Players {
     public boolean wrongAnswer() {
         System.out.println("Question was incorrectly answered");
         System.out.println(players.get(currentPlayer) + " was sent to the penalty box");
-        inPenaltyBox[currentPlayer] = true;
-
+        currentPlayer().inPenalty = true;
         currentPlayer++;
         if (currentPlayer == players.size()) currentPlayer = 0;
         return true;
@@ -106,7 +103,7 @@ public class Players {
     }
 
     public boolean isInPenaltyBox() {
-        return inPenaltyBox[currentPlayer];
+        return currentPlayer().inPenalty;
     }
 
     public int getGoldCoin() {

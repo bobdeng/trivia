@@ -4,11 +4,13 @@ public class Player {
     String name;
     int purse;
     int place;
+    boolean inPenalty;
 
     public Player(String name) {
         this.name = name;
         purse=0;
         place=0;
+        inPenalty=false;
     }
 
     @Override
