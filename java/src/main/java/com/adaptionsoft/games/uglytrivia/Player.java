@@ -46,17 +46,16 @@ public class Player {
 
         if (!inPenalty) {
             move(roll);
-        } else {
-            if (roll % 2 != 0) {
-                isGettingOutOfPenaltyBox = true;
-                System.out.println(name + " is getting out of the penalty box");
-                move(roll);
-
-            } else {
-                System.out.println(name + " is not getting out of the penalty box");
-                isGettingOutOfPenaltyBox = false;
-            }
+            return;
         }
+        if(roll %2==0){
+            System.out.println(name + " is not getting out of the penalty box");
+            isGettingOutOfPenaltyBox = false;
+            return;
+        }
+        isGettingOutOfPenaltyBox = true;
+        System.out.println(name + " is getting out of the penalty box");
+        move(roll);
     }
 
     public void wasCorrectAnswered() {
