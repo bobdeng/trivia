@@ -6,7 +6,6 @@ import java.util.List;
 public class Players {
     List<Player> players = new ArrayList();
     int[] places = new int[6];
-    int[] purses = new int[6];
     boolean[] inPenaltyBox = new boolean[6];
     int currentPlayer = 0;
     boolean isGettingOutOfPenaltyBox;
@@ -28,7 +27,6 @@ public class Players {
 
         players.add(new Player(playerName));
         places[howManyPlayers()] = 0;
-        purses[howManyPlayers()] = 0;
         inPenaltyBox[howManyPlayers()] = false;
 
         System.out.println(playerName + " was added");
@@ -78,11 +76,7 @@ public class Players {
         if (inPenaltyBox[currentPlayer]) {
             if (isGettingOutOfPenaltyBox) {
                 System.out.println("Answer was correct!!!!");
-                purses[currentPlayer]++;
-                System.out.println(players.get(currentPlayer)
-                        + " now has "
-                        + purses[currentPlayer]
-                        + " Gold Coins.");
+                currentPlayer().addGold();
 
                 boolean winner = didPlayerWin();
                 currentPlayer++;
@@ -99,11 +93,7 @@ public class Players {
         } else {
 
             System.out.println("Answer was corrent!!!!");
-            purses[currentPlayer]++;
-            System.out.println(players.get(currentPlayer)
-                    + " now has "
-                    + purses[currentPlayer]
-                    + " Gold Coins.");
+            currentPlayer().addGold();
 
             boolean winner = didPlayerWin();
             currentPlayer++;
@@ -124,7 +114,7 @@ public class Players {
     }
 
     boolean didPlayerWin() {
-        return !(purses[currentPlayer] == 6);
+        return !(currentPlayer().purse == 6);
     }
 
     public boolean isInPenaltyBox() {
@@ -132,6 +122,6 @@ public class Players {
     }
 
     public int getGoldCoin() {
-        return purses[currentPlayer];
+        return currentPlayer().purse;
     }
 }
