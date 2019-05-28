@@ -11,7 +11,7 @@ public class Players {
 
     }
 
-    private Player currentPlayer() {
+    Player currentPlayer() {
         return players.get(currentPlayer);
     }
 
