@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6c970da6-3862-40c5-806f-fc25bd85da38" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/adaptionsoft/games/uglytrivia/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/6/56fc246f24075bc1eb4a4223fee49a9dbf731830" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/6/56fc246f24075bc1eb4a4223fee49a9dbf731830" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/adaptionsoft/games/uglytrivia/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/adaptionsoft/games/uglytrivia/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/adaptionsoft/games/uglytrivia/Players.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/adaptionsoft/games/uglytrivia/Players.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/adaptionsoft/games/uglytrivia/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/adaptionsoft/games/uglytrivia/Player.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -40,7 +36,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/adaptionsoft/games/uglytrivia/Players.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="49">
+            <state relative-caret-position="330">
               <caret line="24" column="41" selection-start-line="24" selection-start-column="41" selection-end-line="24" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -52,14 +48,23 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/adaptionsoft/games/uglytrivia/Player.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+            <state relative-caret-position="75">
+              <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
               <folding>
                 <element signature="e#115#116#0" expanded="true" />
                 <element signature="e#147#148#0" expanded="true" />
                 <element signature="e#193#194#0" expanded="true" />
                 <element signature="e#232#233#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/adaptionsoft/games/trivia/SomeTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-83">
+              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -179,6 +184,14 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="uglytrivia" type="b2602c69:ProjectViewProjectNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="trivia" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -310,14 +323,11 @@
       <updated>1559011238385</updated>
       <workItem from="1559011239801" duration="5157000" />
       <workItem from="1559022836403" duration="173000" />
-      <workItem from="1559023012843" duration="105000" />
+      <workItem from="1559023012843" duration="785000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="SomeTest_(1) - 2019.05.28 at 13h 26m 09s.xml">
-      <configuration name="SomeTest (1)" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="SomeTest_(1) - 2019.05.28 at 13h 44m 29s.xml">
       <configuration name="SomeTest (1)" configurationId="JUnit" />
     </history-entry>
@@ -345,14 +355,18 @@
     <history-entry file="SomeTest - 2019.05.28 at 13h 58m 09s.xml">
       <configuration name="SomeTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="SomeTest - 2019.05.28 at 13h 58m 40s.xml">
+      <configuration name="SomeTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5435000" />
+    <option name="totallyTimeSpent" value="6115000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="4" y="23" width="1416" height="800" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2569141" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2569141" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -361,7 +375,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.329927" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.22481751" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.05693431" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -420,9 +434,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/adaptionsoft/games/trivia/SomeTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-83">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/adaptionsoft/games/uglytrivia/Players.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="49">
+        <state relative-caret-position="330">
           <caret line="24" column="41" selection-start-line="24" selection-start-column="41" selection-end-line="24" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -432,8 +453,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/adaptionsoft/games/uglytrivia/Player.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        <state relative-caret-position="75">
+          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
           <folding>
             <element signature="e#115#116#0" expanded="true" />
             <element signature="e#147#148#0" expanded="true" />
