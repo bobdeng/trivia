@@ -1,4 +1,12 @@
 package com.adaptionsoft.games.trivia;
 
-public class GameRepoImpl {
+import java.util.ArrayList;
+import java.util.List;
+
+public class GameRepoImpl implements GameRepo{
+    List<String> history=new ArrayList<>();
+    @Override
+    public void printHistory(String his) {
+        history.add(his);
+    }
 }
