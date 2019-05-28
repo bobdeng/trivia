@@ -63,23 +63,18 @@ public class Player {
         }
     }
 
-    public boolean wasCorrectAnswered() {
+    public void wasCorrectAnswered() {
         if (inPenalty) {
             if (isGettingOutOfPenaltyBox) {
                 System.out.println("Answer was correct!!!!");
                 addGold();
-                return didPlayerWin();
-            } else {
-                return true;
             }
-
 
         } else {
 
             System.out.println("Answer was corrent!!!!");
             addGold();
 
-            return  didPlayerWin();
 
         }
     }
