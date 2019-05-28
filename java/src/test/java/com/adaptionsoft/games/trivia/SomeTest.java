@@ -36,7 +36,10 @@ public class SomeTest {
 
 	private String readFile(String file) throws Exception{
 		InputStream intputStream = getClass().getClassLoader().getResourceAsStream(file);
-		return null;
+		byte[] data=new byte[intputStream.available()];
+		intputStream.read(data);
+		intputStream.close();
+		return new String(data);
 	}
 
 	@Test
