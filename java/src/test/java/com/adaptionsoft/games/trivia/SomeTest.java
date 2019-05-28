@@ -2,7 +2,6 @@ package com.adaptionsoft.games.trivia;
 
 import static org.junit.Assert.*;
 
-import com.adaptionsoft.games.uglytrivia.Game;
 import org.junit.Before;
 import org.junit.Test;
 

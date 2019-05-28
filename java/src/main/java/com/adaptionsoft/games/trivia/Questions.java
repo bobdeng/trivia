@@ -1,6 +1,4 @@
-package com.adaptionsoft.games.uglytrivia;
-
-import com.adaptionsoft.games.trivia.GameRepos;
+package com.adaptionsoft.games.trivia;
 
 import java.util.LinkedList;
 
