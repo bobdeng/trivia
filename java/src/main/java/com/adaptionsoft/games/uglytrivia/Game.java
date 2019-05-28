@@ -55,15 +55,15 @@ public class Game {
 	
 	
 	private String currentCategory() {
-		if (players.places[players.currentPlayer] == 0) return "Pop";
-		if (players.places[players.currentPlayer] == 4) return "Pop";
-		if (players.places[players.currentPlayer] == 8) return "Pop";
-		if (players.places[players.currentPlayer] == 1) return "Science";
-		if (players.places[players.currentPlayer] == 5) return "Science";
-		if (players.places[players.currentPlayer] == 9) return "Science";
-		if (players.places[players.currentPlayer] == 2) return "Sports";
-		if (players.places[players.currentPlayer] == 6) return "Sports";
-		if (players.places[players.currentPlayer] == 10) return "Sports";
+		if (players.place() == 0) return "Pop";
+		if (players.place() == 4) return "Pop";
+		if (players.place() == 8) return "Pop";
+		if (players.place() == 1) return "Science";
+		if (players.place() == 5) return "Science";
+		if (players.place() == 9) return "Science";
+		if (players.place() == 2) return "Sports";
+		if (players.place() == 6) return "Sports";
+		if (players.place() == 10) return "Sports";
 		return "Rock";
 	}
 

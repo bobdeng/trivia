@@ -124,4 +124,8 @@ public class Players {
     public int getGoldCoin() {
         return currentPlayer().purse;
     }
+
+    public int place() {
+        return places[currentPlayer];
+    }
 }
