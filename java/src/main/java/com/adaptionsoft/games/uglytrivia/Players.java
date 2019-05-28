@@ -15,6 +15,10 @@ public class Players {
 
     }
 
+    private Player currentPlayer(){
+        return players.get(currentPlayer);
+    }
+
     public boolean isPlayable() {
         return (howManyPlayers() >= 2);
     }
