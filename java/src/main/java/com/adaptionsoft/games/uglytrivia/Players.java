@@ -1,5 +1,7 @@
 package com.adaptionsoft.games.uglytrivia;
 
+import com.adaptionsoft.games.trivia.GameRepos;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -21,8 +23,8 @@ public class Players {
 
     public boolean add(String playerName) {
         players.add(new Player(playerName));
-        System.out.println(playerName + " was added");
-        System.out.println("They are player number " + players.size());
+        GameRepos.print(playerName + " was added");
+        GameRepos.print("They are player number " + players.size());
         return true;
     }
 
@@ -47,7 +49,7 @@ public class Players {
     }
 
     public boolean wrongAnswer() {
-        System.out.println("Question was incorrectly answered");
+        GameRepos.print("Question was incorrectly answered");
         currentPlayer().wrongAnswer();
         next();
         return true;
