@@ -21,6 +21,18 @@ public class SomeTest {
 		game.add("bob");
 		checkGameHistory("game_start.history");
 	}
+
+	@Test
+	public void game_play_once() throws Exception{
+		Game game=new Game();
+		game.add("alice");
+		game.add("bob");
+		game.roll(1);
+		game.wasCorrectlyAnswered();
+		//checkGameHistory("game_play.history");
+	}
+
+
 	@Test
 	public void game_win() throws Exception {
 
