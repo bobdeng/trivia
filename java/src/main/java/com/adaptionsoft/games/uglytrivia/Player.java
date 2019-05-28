@@ -43,7 +43,9 @@ public class Player {
     public void roll(int roll) {
         System.out.println(name + " is the current player");
         System.out.println("They have rolled a " + roll);
-        if (!inPenalty) {
+        if (!inPenalty || rollOutPenalty(roll)) {
+            isGettingOutOfPenaltyBox = true;
+            System.out.println(name + " is getting out of the penalty box");
             move(roll);
             return;
         }
@@ -52,9 +54,7 @@ public class Player {
             isGettingOutOfPenaltyBox = false;
             return;
         }
-        isGettingOutOfPenaltyBox = true;
-        System.out.println(name + " is getting out of the penalty box");
-        move(roll);
+
     }
 
     private boolean rollOutPenalty(int roll) {
