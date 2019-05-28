@@ -30,6 +30,7 @@ public class SomeTest {
 		game.roll(1);
 		game.wasCorrectlyAnswered();
 		checkGameHistory("game_play_once.history");
+		game.roll(4);
 	}
 
 
