@@ -47,7 +47,7 @@ public class Player {
             move(roll);
             return;
         }
-        if(rollOutPenalty(roll)){
+        if(!rollOutPenalty(roll)){
             System.out.println(name + " is not getting out of the penalty box");
             isGettingOutOfPenaltyBox = false;
             return;
@@ -58,7 +58,7 @@ public class Player {
     }
 
     private boolean rollOutPenalty(int roll) {
-        return roll %2==0;
+        return roll %2!=0;
     }
 
     public void wasCorrectAnswered() {
