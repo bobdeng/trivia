@@ -20,14 +20,14 @@ public class Questions {
     }
 
 
-    void askQuestion() {
-        if (game.currentCategory() == "Pop")
+    void askQuestion(String catagory) {
+        if (catagory == "Pop")
             System.out.println(popQuestions.removeFirst());
-        if (game.currentCategory() == "Science")
+        if (catagory == "Science")
             System.out.println(scienceQuestions.removeFirst());
-        if (game.currentCategory() == "Sports")
+        if (catagory == "Sports")
             System.out.println(sportsQuestions.removeFirst());
-        if (game.currentCategory() == "Rock")
+        if (catagory == "Rock")
             System.out.println(rockQuestions.removeFirst());
     }
 }

@@ -36,7 +36,7 @@ public class Game {
 	public boolean wasCorrectlyAnswered() {
 		boolean result = players.wasCorrectlyAnswered();
 		System.out.println("The category is " + currentCategory());
-		questions.askQuestion();
+		questions.askQuestion(currentCategory());
 		return result;
 
 	}
