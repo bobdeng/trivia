@@ -32,7 +32,6 @@ public class Players {
 
     public void roll(int roll) {
         currentPlayer().roll(roll);
-
     }
 
     public boolean wasCorrectlyAnswered() {
