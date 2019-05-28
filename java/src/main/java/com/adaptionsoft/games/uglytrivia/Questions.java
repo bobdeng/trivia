@@ -35,6 +35,7 @@ public class Questions {
 
     void askQuestion(int place) {
         String catagory = getCurrentQuestion(place);
+        System.out.println("The category is " + catagory);
         if (catagory == "Pop")
             System.out.println(popQuestions.removeFirst());
         if (catagory == "Science")
