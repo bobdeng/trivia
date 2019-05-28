@@ -23,8 +23,7 @@ public class Game {
 
 	public boolean wasCorrectlyAnswered() {
 		boolean result = players.wasCorrectlyAnswered();
-
-		questions.askQuestion(players.currentPlayer().place);
+		questions.askQuestion(players.currentPlayer());
 		return result;
 
 	}

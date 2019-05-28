@@ -33,8 +33,8 @@ public class Questions {
     }
 
 
-    void askQuestion(int place) {
-        String catagory = getCurrentQuestion(place);
+    void askQuestion(Player player) {
+        String catagory = getCurrentQuestion(player.place);
         System.out.println("The category is " + catagory);
         if (catagory == "Pop")
             System.out.println(popQuestions.removeFirst());
