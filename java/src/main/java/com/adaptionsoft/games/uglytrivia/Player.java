@@ -23,4 +23,13 @@ public class Player {
                 + purse
                 + " Gold Coins.");
     }
+
+    public void move(int roll) {
+        place = place + roll;
+        if (place > 11) place = place - 12;
+
+        System.out.println(name
+                + "'s new location is "
+                + place);
+    }
 }

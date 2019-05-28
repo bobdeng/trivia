@@ -5,7 +5,6 @@ import java.util.List;
 
 public class Players {
     List<Player> players = new ArrayList();
-    int[] places = new int[6];
     boolean[] inPenaltyBox = new boolean[6];
     int currentPlayer = 0;
     boolean isGettingOutOfPenaltyBox;
@@ -26,7 +25,6 @@ public class Players {
 
 
         players.add(new Player(playerName));
-        places[howManyPlayers()] = 0;
         inPenaltyBox[howManyPlayers()] = false;
 
         System.out.println(playerName + " was added");
@@ -47,12 +45,7 @@ public class Players {
                 isGettingOutOfPenaltyBox = true;
 
                 System.out.println(players.get(currentPlayer) + " is getting out of the penalty box");
-                places[currentPlayer] = places[currentPlayer] + roll;
-                if (places[currentPlayer] > 11) places[currentPlayer] = places[currentPlayer] - 12;
-
-                System.out.println(players.get(currentPlayer)
-                        + "'s new location is "
-                        + places[currentPlayer]);
+                currentPlayer().move(roll);
 
             } else {
                 System.out.println(players.get(currentPlayer) + " is not getting out of the penalty box");
@@ -61,12 +54,7 @@ public class Players {
 
         } else {
 
-            places[currentPlayer] = places[currentPlayer] + roll;
-            if (places[currentPlayer] > 11) places[currentPlayer] = places[currentPlayer] - 12;
-
-            System.out.println(players.get(currentPlayer)
-                    + "'s new location is "
-                    + places[currentPlayer]);
+            currentPlayer().move(roll);
 
         }
 
@@ -126,6 +114,6 @@ public class Players {
     }
 
     public int place() {
-        return places[currentPlayer];
+        return currentPlayer().place;
     }
 }
