@@ -20,8 +20,8 @@ public class Game {
 	}
 
 	public boolean wasCorrectlyAnswered() {
-		boolean playerNotWin = players.wasCorrectlyAnswered();
 		questions.askQuestion(players.currentPlayer());
+		boolean playerNotWin = players.wasCorrectlyAnswered();
 		return playerNotWin;
 
 	}

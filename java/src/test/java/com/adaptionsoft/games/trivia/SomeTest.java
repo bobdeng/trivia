@@ -29,7 +29,7 @@ public class SomeTest {
 		game.add("bob");
 		game.roll(1);
 		game.wasCorrectlyAnswered();
-		//checkGameHistory("game_play_once.history");
+		checkGameHistory("game_play_once.history");
 	}
 
 

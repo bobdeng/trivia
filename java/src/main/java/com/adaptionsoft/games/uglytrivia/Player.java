@@ -47,7 +47,7 @@ public class Player {
         GameRepos.print("They have rolled a " + roll);
         if (!inPenalty || rollOutPenalty(roll)) {
             isGettingOutOfPenaltyBox = true;
-            GameRepos.print(name + " is getting out of the penalty box");
+            //GameRepos.print(name + " is getting out of the penalty box");
             move(roll);
             return;
         }
