@@ -1,18 +1,18 @@
 package com.adaptionsoft.games.uglytrivia;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Players {
-    private final Game game;
-    ArrayList players = new ArrayList();
+    List<Player> players = new ArrayList();
     int[] places = new int[6];
     int[] purses = new int[6];
     boolean[] inPenaltyBox = new boolean[6];
     int currentPlayer = 0;
     boolean isGettingOutOfPenaltyBox;
 
-    public Players(Game game) {
-        this.game = game;
+    public Players() {
+
     }
 
     public boolean isPlayable() {
@@ -22,7 +22,7 @@ public class Players {
     public boolean add(String playerName) {
 
 
-        players.add(playerName);
+        players.add(new Player(playerName));
         places[howManyPlayers()] = 0;
         purses[howManyPlayers()] = 0;
         inPenaltyBox[howManyPlayers()] = false;

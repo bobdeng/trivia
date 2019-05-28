@@ -1,12 +1,14 @@
 
-T
-squid:S106"9Replace this use of System.out or System.err by a logger.(¤εβ8έ‘τη―-
-isquid:S1192"HDefine a constant instead of duplicating this literal "Science" 4 times.(ΙΉΉΞώÿÿÿÿ8έ‘τη―-
-T
-squid:S106"9Replace this use of System.out or System.err by a logger.(µ‹¶8έ‘τη―-
-hsquid:S1192"GDefine a constant instead of duplicating this literal "Sports" 4 times.(κµ’Τώÿÿÿÿ8έ‘τη―-
-Y
-squid:S106"9Replace this use of System.out or System.err by a logger.(ωΓύÿÿÿÿ8έ‘τη―-
-Y
-squid:S106"9Replace this use of System.out or System.err by a logger.(ÿ™Λύÿÿÿÿ8έ‘τη―-
-_squid:UnusedPrivateMethod"0Remove this unused private "askQuestion" method.(Ώή―οώÿÿÿÿ8ύ€θ―-
+V
+squid:S1065"9Replace this use of System.out or System.err by a logger.(¤εβ8έ‘τη―-
+jsquid:S11922"GDefine a constant instead of duplicating this literal "Sports" 4 times.(κµ’Τώÿÿÿÿ8έ‘τη―-
+[
+squid:S106H"9Replace this use of System.out or System.err by a logger.(ρΏ«Ψψÿÿÿÿ8 Δ‡θ―-
+ksquid:S11920"HDefine a constant instead of duplicating this literal "Science" 4 times.(ΙΉΉΞώÿÿÿÿ8έ‘τη―-
+V
+squid:S106/"9Replace this use of System.out or System.err by a logger.(µ‹¶8έ‘τη―-
+[
+squid:S1061"9Replace this use of System.out or System.err by a logger.(ÿ™Λύÿÿÿÿ8έ‘τη―-
+[
+squid:S1063"9Replace this use of System.out or System.err by a logger.(ωΓύÿÿÿÿ8έ‘τη―-
+]squid:UnusedPrivateMethodT"1Remove this unused private "didPlayerWin" method.(°Ά»ψ8ΕΛθ―-

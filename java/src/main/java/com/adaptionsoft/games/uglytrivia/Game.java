@@ -3,7 +3,7 @@ package com.adaptionsoft.games.uglytrivia;
 import java.util.LinkedList;
 
 public class Game {
-	final Players players = new Players(this);
+	final Players players = new Players();
 
 	LinkedList popQuestions = new LinkedList();
     LinkedList scienceQuestions = new LinkedList();
