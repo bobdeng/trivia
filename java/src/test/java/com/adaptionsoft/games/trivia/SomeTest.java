@@ -67,30 +67,5 @@ public class SomeTest {
 		return new String(data);
 	}
 
-	@Test
-	public void game_penalty() throws Exception {
-		Game game = new Game();
-		game.add("alice");
-		game.add("bob");
-		//trun 1
-		game.roll(1);
-		game.wrongAnswer();
-		game.roll(1);
-		game.wrongAnswer();
-		assertTrue(game.isInPenaltyBox());
-		//turn 2
-		game.roll(3);
-		game.wasCorrectlyAnswered();
-		assertTrue(game.isInPenaltyBox());
-		assertEquals(game.getGoldCoin(),0);
-		game.roll(2);
-		game.wasCorrectlyAnswered();
-		assertTrue(game.isInPenaltyBox());
-		assertEquals(game.getGoldCoin(),1);
-		//trun 3
-		game.roll(3);
-		game.wasCorrectlyAnswered();
-		assertTrue(game.isInPenaltyBox());
-		assertEquals(game.getGoldCoin(),0);
-	}
+	
 }
