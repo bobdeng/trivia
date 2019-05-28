@@ -62,8 +62,4 @@ public class Players {
         return currentPlayer().purse;
     }
 
-    public int place() {
-        return currentPlayer().place;
-    }
-
 }
