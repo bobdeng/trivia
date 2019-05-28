@@ -39,29 +39,9 @@ public class Players {
     }
 
     public boolean wasCorrectlyAnswered() {
-        if (currentPlayer().inPenalty) {
-            if (currentPlayer().isGettingOutOfPenaltyBox) {
-                System.out.println("Answer was correct!!!!");
-                currentPlayer().addGold();
-                boolean winner = didPlayerWin();
-                next();
-                return winner;
-            } else {
-                next();
-                return true;
-            }
-
-
-        } else {
-
-            System.out.println("Answer was corrent!!!!");
-            currentPlayer().addGold();
-
-            boolean winner = didPlayerWin();
-            next();
-
-            return winner;
-        }
+        boolean result=currentPlayer().wasCorrectAnswered();
+        next();
+        return result;
     }
 
     private void next() {
@@ -76,9 +56,6 @@ public class Players {
         return true;
     }
 
-    boolean didPlayerWin() {
-        return !(currentPlayer().purse == 6);
-    }
 
     public boolean isInPenaltyBox() {
         return currentPlayer().inPenalty;
@@ -90,5 +67,9 @@ public class Players {
 
     public int place() {
         return currentPlayer().place;
+    }
+
+    public boolean didPlayerWin() {
+        return currentPlayer().didPlayerWin();
     }
 }

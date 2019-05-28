@@ -62,4 +62,31 @@ public class Player {
 
         }
     }
+
+    public boolean wasCorrectAnswered() {
+        if (inPenalty) {
+            if (isGettingOutOfPenaltyBox) {
+                System.out.println("Answer was correct!!!!");
+                addGold();
+                boolean winner = didPlayerWin();
+                return winner;
+            } else {
+                return true;
+            }
+
+
+        } else {
+
+            System.out.println("Answer was corrent!!!!");
+            addGold();
+
+            boolean winner = didPlayerWin();
+
+            return winner;
+        }
+    }
+    boolean didPlayerWin() {
+        return purse != 6;
+    }
+
 }
