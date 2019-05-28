@@ -11,7 +11,14 @@ public class Questions {
 
     public Questions(Game game) {
         this.game = game;
+        for (int i = 0; i < 50; i++) {
+            popQuestions.addLast("Pop Question " + i);
+            scienceQuestions.addLast(("Science Question " + i));
+            sportsQuestions.addLast(("Sports Question " + i));
+            rockQuestions.addLast("Rock Question " + i);
+        }
     }
+
 
     void askQuestion() {
         if (game.currentCategory() == "Pop")

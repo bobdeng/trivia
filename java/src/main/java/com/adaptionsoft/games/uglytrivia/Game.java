@@ -5,17 +5,10 @@ public class Game {
 	final Questions questions = new Questions(this);
 
 	public  Game(){
-    	for (int i = 0; i < 50; i++) {
-			questions.popQuestions.addLast("Pop Question " + i);
-			questions.scienceQuestions.addLast(("Science Question " + i));
-			questions.sportsQuestions.addLast(("Sports Question " + i));
-			questions.rockQuestions.addLast(createRockQuestion(i));
-    	}
+
     }
 
-	public String createRockQuestion(int index){
-		return "Rock Question " + index;
-	}
+
 	
 	public boolean isPlayable() {
 		return players.isPlayable();
