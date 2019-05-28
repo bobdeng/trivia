@@ -13,15 +13,11 @@ public class SomeTest {
 		Game game=new Game();
 		game.add("alice");
 		game.add("bob");
-		assertTrue(game.isPlayable());
 		for(int i=0;i<5;i++) {
 			game.roll(1);
-			assertTrue(game.wasCorrectlyAnswered());
 			game.roll(1);
-			assertTrue(game.wasCorrectlyAnswered());
 		}
 		game.roll(1);
-		assertFalse(game.wasCorrectlyAnswered());
 
 	}
 
