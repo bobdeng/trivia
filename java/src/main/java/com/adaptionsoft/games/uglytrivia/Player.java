@@ -64,18 +64,14 @@ public class Player {
     }
 
     public void wasCorrectAnswered() {
-        if (inPenalty) {
-            if (isGettingOutOfPenaltyBox) {
-                System.out.println("Answer was correct!!!!");
-                addGold();
-            }
-
-        } else {
-
+        if (!inPenalty) {
             System.out.println("Answer was corrent!!!!");
             addGold();
-
-
+            return;
+        }
+        if (isGettingOutOfPenaltyBox) {
+            System.out.println("Answer was correct!!!!");
+            addGold();
         }
     }
     boolean didPlayerWin() {
