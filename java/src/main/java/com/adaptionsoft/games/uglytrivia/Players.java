@@ -63,15 +63,11 @@ public class Players {
             if (isGettingOutOfPenaltyBox) {
                 System.out.println("Answer was correct!!!!");
                 currentPlayer().addGold();
-
                 boolean winner = didPlayerWin();
-                currentPlayer++;
-                if (currentPlayer == players.size()) currentPlayer = 0;
-
+                next();
                 return winner;
             } else {
-                currentPlayer++;
-                if (currentPlayer == players.size()) currentPlayer = 0;
+                next();
                 return true;
             }
 
@@ -82,19 +78,22 @@ public class Players {
             currentPlayer().addGold();
 
             boolean winner = didPlayerWin();
-            currentPlayer++;
-            if (currentPlayer == players.size()) currentPlayer = 0;
+            next();
 
             return winner;
         }
+    }
+
+    private void next() {
+        currentPlayer++;
+        if (currentPlayer == players.size()) currentPlayer = 0;
     }
 
     public boolean wrongAnswer() {
         System.out.println("Question was incorrectly answered");
         System.out.println(players.get(currentPlayer) + " was sent to the penalty box");
         currentPlayer().inPenalty = true;
-        currentPlayer++;
-        if (currentPlayer == players.size()) currentPlayer = 0;
+        next();
         return true;
     }
 

@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6c970da6-3862-40c5-806f-fc25bd85da38" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/adaptionsoft/games/uglytrivia/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/adaptionsoft/games/uglytrivia/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/adaptionsoft/games/uglytrivia/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/adaptionsoft/games/uglytrivia/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/adaptionsoft/games/uglytrivia/Players.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/adaptionsoft/games/uglytrivia/Players.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
@@ -27,7 +28,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/adaptionsoft/games/uglytrivia/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
+            <state relative-caret-position="341">
               <caret line="57" column="23" selection-start-line="57" selection-start-column="23" selection-end-line="57" selection-end-column="23" />
             </state>
           </provider>
@@ -36,8 +37,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/adaptionsoft/games/uglytrivia/Players.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="292">
-              <caret line="128" column="35" selection-start-line="128" selection-start-column="35" selection-end-line="128" selection-end-column="35" />
+            <state relative-caret-position="-216">
+              <caret line="66" column="16" selection-start-line="66" selection-start-column="16" selection-end-line="66" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#370#371#0" expanded="true" />
@@ -56,8 +57,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/adaptionsoft/games/uglytrivia/Player.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            <state relative-caret-position="-36">
+              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
               <folding>
                 <element signature="e#193#194#0" expanded="true" />
                 <element signature="e#232#233#0" expanded="true" />
@@ -96,7 +97,14 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>isGettingOutOfPenaltyBox</find>
+      <find>players.places[players.currentPlayer]</find>
+      <find>places[currentPlayer]</find>
     </findStrings>
+    <replaceStrings>
+      <replace>players.place();</replace>
+      <replace>players.place()</replace>
+      <replace>place</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -106,8 +114,8 @@
       <list>
         <option value="$PROJECT_DIR$/src/test/java/com/adaptionsoft/games/trivia/SomeTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/adaptionsoft/games/SomeTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/adaptionsoft/games/uglytrivia/Player.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/adaptionsoft/games/uglytrivia/Game.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/adaptionsoft/games/uglytrivia/Player.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/adaptionsoft/games/uglytrivia/Players.java" />
       </list>
     </option>
@@ -329,23 +337,11 @@
       <updated>1559011238385</updated>
       <workItem from="1559011239801" duration="5157000" />
       <workItem from="1559022836403" duration="173000" />
-      <workItem from="1559023012843" duration="1122000" />
+      <workItem from="1559023012843" duration="1383000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="SomeTest - 2019.05.28 at 13h 55m 52s.xml">
-      <configuration name="SomeTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SomeTest - 2019.05.28 at 13h 56m 44s.xml">
-      <configuration name="SomeTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SomeTest - 2019.05.28 at 13h 57m 55s.xml">
-      <configuration name="SomeTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SomeTest - 2019.05.28 at 13h 58m 09s.xml">
-      <configuration name="SomeTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="SomeTest - 2019.05.28 at 13h 58m 40s.xml">
       <configuration name="SomeTest" configurationId="JUnit" />
     </history-entry>
@@ -364,9 +360,21 @@
     <history-entry file="SomeTest - 2019.05.28 at 14h 21m 23s.xml">
       <configuration name="SomeTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="SomeTest - 2019.05.28 at 14h 24m 24s.xml">
+      <configuration name="SomeTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SomeTest - 2019.05.28 at 14h 25m 21s.xml">
+      <configuration name="SomeTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SomeTest - 2019.05.28 at 14h 27m 30s.xml">
+      <configuration name="SomeTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SomeTest - 2019.05.28 at 14h 27m 50s.xml">
+      <configuration name="SomeTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6452000" />
+    <option name="totallyTimeSpent" value="6713000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="4" y="23" width="1416" height="800" extended-state="0" />
@@ -381,7 +389,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.329927" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.19562043" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.19562043" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -396,7 +404,7 @@
       <window_info anchor="bottom" id="SonarLint" order="14" />
       <window_info anchor="bottom" id="Database Changes" order="15" />
       <window_info anchor="bottom" id="Version Control" order="16" />
-      <window_info anchor="bottom" id="Messages" order="17" visible="true" weight="0.329927" />
+      <window_info anchor="bottom" id="Messages" order="17" weight="0.329927" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -440,10 +448,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/adaptionsoft/games/uglytrivia/Game.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="57" column="23" selection-start-line="57" selection-start-column="23" selection-end-line="57" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/adaptionsoft/games/uglytrivia/Player.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        <state relative-caret-position="-36">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
           <folding>
             <element signature="e#193#194#0" expanded="true" />
             <element signature="e#232#233#0" expanded="true" />
@@ -451,17 +466,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/adaptionsoft/games/uglytrivia/Game.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="57" column="23" selection-start-line="57" selection-start-column="23" selection-end-line="57" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/adaptionsoft/games/uglytrivia/Players.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="128" column="35" selection-start-line="128" selection-start-column="35" selection-end-line="128" selection-end-column="35" />
+        <state relative-caret-position="-216">
+          <caret line="66" column="16" selection-start-line="66" selection-start-column="16" selection-end-line="66" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#370#371#0" expanded="true" />
