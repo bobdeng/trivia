@@ -69,7 +69,4 @@ public class Players {
         return currentPlayer().place;
     }
 
-    public boolean didPlayerWin() {
-        return currentPlayer().didPlayerWin();
-    }
 }

@@ -80,11 +80,6 @@ public class Game {
 		return players.wrongAnswer();
 	}
 
-
-	private boolean didPlayerWin() {
-		return players.didPlayerWin();
-	}
-
 	public boolean isInPenaltyBox() {
 		return players.isInPenaltyBox();
 	}
