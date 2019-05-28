@@ -166,4 +166,12 @@ public class Game {
 	private boolean didPlayerWin() {
 		return !(purses[currentPlayer] == 6);
 	}
+
+	public boolean isInPenaltyBox() {
+		return inPenaltyBox[currentPlayer];
+	}
+
+	public int getGoldCoin() {
+		return purses[currentPlayer];
+	}
 }
