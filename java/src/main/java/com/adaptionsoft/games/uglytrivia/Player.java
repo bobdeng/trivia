@@ -3,9 +3,12 @@ package com.adaptionsoft.games.uglytrivia;
 public class Player {
     String name;
     int purse;
+    int place;
 
     public Player(String name) {
         this.name = name;
+        purse=0;
+        place=0;
     }
 
     @Override
